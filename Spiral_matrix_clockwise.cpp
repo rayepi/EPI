@@ -13,7 +13,6 @@ using std::vector;
 
 void PrintMatrixClockwise(const vector<vector<int>> &A, int offset);
 
-// @include
 void PrintMatrixInSpiralOrder(const vector<vector<int>> &A) {
 	int xMin = 0, xMax = A.size() - 1, yMin = 0, yMax = A.size() - 1, xIncrement = 0, yIncrement = 1; // initial goes right
 	int x = xMin, y = yMin;
@@ -45,8 +44,6 @@ void PrintMatrixInSpiralOrder(const vector<vector<int>> &A) {
 		y += yIncrement;
 	}
 }
-
-// @exclude
 
 int main(int argc, char *argv[]) {
 	int N;
