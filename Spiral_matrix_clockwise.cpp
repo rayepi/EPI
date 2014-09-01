@@ -14,7 +14,7 @@ using std::vector;
 void PrintMatrixClockwise(const vector<vector<int>> &A, int offset);
 
 void PrintMatrixInSpiralOrder(const vector<vector<int>> &A) {
-	int xMin = 0, xMax = A.size() - 1, yMin = 0, yMax = A.size() - 1, xIncrement = 0, yIncrement = 1; // initial goes right
+	int xMin = 0, xMax = A.size() - 1, yMin = 0, yMax = A.size() - 1, xIncrement = 0, yIncrement = 1; // initially go right
 	int x = xMin, y = yMin;
 	while (xMin <= x && x <= xMax && yMin <= y && y <= yMax) {
 		cout << A[x][y] << ' ';
